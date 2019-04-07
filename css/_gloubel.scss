@@ -1,0 +1,51 @@
+body{
+    font-family: $ff-body;
+    color: $gray-dark;
+    font-size: 16px;
+}
+
+a{
+    color: $gray-dark;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        color: $orang;
+    }
+}
+
+P{
+    line-height: 2em;
+    margin-bottom: $p-20;
+    color: #666;
+}
+
+%z-index{
+    z-index: 2;
+    position: relative;
+}
+
+.brand{
+    span{
+        display: block;
+        font-size: 16px;
+        letter-spacing: 1;
+    }
+    span:first-child{
+        color: lighten($blue-dark, 10%);
+        font-family: $ff-heading;
+        font-size: 30px !important;
+    }
+}// .brand
+
+.clear-both{
+    clear: both;
+}
+
+
+.heading{
+    font-size: 36px;
+    font-family: $ff-heading;
+    color: $blue-dark;
+    margin-bottom: $p-30;
+    text-align: center;
+}
+

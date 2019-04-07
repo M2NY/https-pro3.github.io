@@ -1,0 +1,87 @@
+.footer {
+    padding: $p-60 0 0;
+    margin-bottom: 20px;
+
+    .brand {
+        margin-bottom: 20px;
+        position: relative;
+        top: 0;
+    }
+
+    .social {
+        a {
+            padding: $p-5;
+            color:rgb(95, 95, 95);
+        }
+    }
+
+    h4{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.3em;
+    }
+    form{
+        .form-group{
+            display: flex;
+            i{
+                background: #444;
+                color: $gray-lite2;
+                width: 40px;
+                text-align: center;
+                font-size: 14px;
+                line-height: 35px; 
+                border-radius: 5px 0 0 5px;
+            }
+            input{
+                width: 60%;
+                padding: $p-5;
+                border: 1px solid #ccc;
+            }
+            a{
+                background: $blue-dark;
+                color: $gray-lite2;
+                line-height: 25px;
+                padding: $p-5;
+                width:100px;
+                display: block;
+                text-align: center;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+
+    address{
+        width: 80%;
+        float: right;
+        li{
+            padding: $p-10 0;
+            display: flex;
+            i{
+                padding-right: $p-20;
+                color: $blue-dark;
+            }
+            span{
+                line-height: 1.5em;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+.copy-right {
+    background: rgb(182, 182, 182);
+    text-align: center;
+    padding: $p-5 0;
+    font-size: 14px;
+
+    p {
+        color: #444 !important;
+        margin-bottom: 0;
+    }
+
+}

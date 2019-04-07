@@ -1,0 +1,180 @@
+.welcome{
+    padding: $p-60 0;
+    a{
+        @include button-link;
+        width: 25%;
+    }
+    img{
+        height: 290px;
+    }
+}
+
+// choose-us
+.choose-us{
+    background: $gray-lite;
+    padding: $p-60;
+    .choose-items{
+        margin-top: 50px;
+        @include flex;
+        .icon-choose{
+             margin-right: $p-20;
+            span{
+                border: 2px solid $orang;
+                border-radius: 50%;
+                display: block;
+                width: 75px;
+                height: 75px;
+                text-align: center;
+                i{
+                    font-size: 26px;
+                    line-height: 70px;
+                    color: $orang;
+                }
+            }
+        }
+        .info-choose{
+            h3{
+                font-size: 22px;
+                font-weight: bold;
+                letter-spacing: 0.9
+            }
+            p{}
+        }
+    }
+}
+
+// programs
+.programs{
+    padding: $p-30 + 30;
+    P{
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: $p-60;
+    }
+    .programs-items{
+        height: 275px;
+        &.programs-items:hover .info{
+            opacity: 1;
+            height: 150px;
+            transition:all 1s ease-in-out;
+        }
+        &.programs-items:hover img{
+           filter: grayscale(100%) blur(2px); 
+           transition:all 1.5s ease-in-out;
+        }
+        img{
+            filter: grayscale(50%);
+            width: 100%;
+            height: 275px;
+            border-radius: 5px;
+        }
+        .info{
+            position: absolute;
+            background: linear-gradient(to top, #090a0a, #bdc3c700);
+            width: 90%;
+            height: 0;
+            bottom: 0;
+            padding: $p-5 0;
+            text-align: center;
+            margin: 0 auto;
+            opacity: 0;
+            overflow: hidden;
+            span{
+                display: block;
+                font-size: 22px;
+                font-family: $ff-heading ;
+                color: $gray-lite;
+                letter-spacing: 0.2em;
+                padding-bottom: $p-10;
+                margin-top: 40px;
+            }
+            a{
+                @include button-link;
+                padding: $p-10 $p-20;
+                border-radius: 0;
+                width: 40%;
+                margin: 0 auto;
+                display: block;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//testimonials
+.testimonials{
+    padding: $p-60;
+    background: url(../images/bg-test.jpg)center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    .heading{
+        z-index: 9999;
+        position: relative;
+        margin-bottom: 60px;
+        color: #FFF !important;
+    }
+    &:after{
+        content: "";
+        @include grdint-color;
+        position: absolute;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;  
+    }
+    .item-testimonial{
+        z-index: 9999;
+        position: relative;
+        p{
+        background: $gray-lite2;
+        color: $gray-dark !important;
+        padding: $p-20 $p-20;
+        height: 170px;
+        width: 100%;
+        border-radius: 5px;
+        position: relative;
+        }
+        .prsonal-photo{
+            position: absolute;
+            top: 125px;
+            left: 20px; 
+            img{
+                border: 2px solid #fff;
+                border-radius: 50%;
+                width: 75px;
+                height: 75px;
+                -webkit-box-shadow: 5px 10px 10px #434345;
+                box-shadow: 5px 10px 10px #43434594;
+            }
+        }
+        .detils{
+            color: $gray-lite2;
+            margin-top: 50px;
+            span{
+                display: block;  
+            }
+            span:first-child{
+                font-weight: bold;
+                font-size: 18px;
+                padding: $p-5;
+            }
+        }    
+    }
+}
+
+.spiner-photo{
+    display: flex;
+    justify-content: space-between;  
+    .item{
+        width: (100% / 6);
+        margin: 0;
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+}
